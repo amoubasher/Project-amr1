@@ -1,17 +1,16 @@
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucia Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--body-color);
+    box-sizing: border-box;
 }
 
 :root {
     --text-color: rgb(0, 92, 128);
-    --highlight-color: grey;
     --tertiary: #f8f8ff;
-    --body-color: #f8f8ff;
+    --body-color: rgb(199, 199, 199);
 }
 
 header {
-    background-color: var(--);
     color: var(--text-color);
     width: 100%;
     padding: 10px;
@@ -24,8 +23,8 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
-header .brand {
-    font-size: 1.5em;
+header h1 {
+    font-size: 34px;
     font-weight: bold;
 }
 
@@ -36,14 +35,46 @@ nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    font-size: 25px;
+}
+
+h2 {
+    margin: 0;
+    display: block;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 nav li {
     margin: 0px 10px;
 }
 
+nav ul li a {
+    color: black;
+    display: flex;
+    background-image: linear-gradient(270deg, black 0%, black 100%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto 5px;
+    transition: all 0.25s ease-in;
+    padding: 10px;
+    margin: 0 4px;
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    background-size: auto 100%;
+    color: var(--tertiary);
+}
+
 .big-banner {
     height: 300px;
+    margin: 0px;
+    padding: 0px;
     font-size: 32px;
     background-image: url(./water.jpg);
     display: flex;
@@ -52,16 +83,15 @@ nav li {
 }
 
 .big-banner h2 {
-    padding: 25px;
+    padding: 0px;
     background-color: transparent;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 0px;
     color: var(--text-color);
-    background-color: var(--tertiary)
 }
 
 .main-part {
@@ -76,25 +106,100 @@ main {
 
 .main-part div {
     width: 75%;
-    display: flex;
     border-left: 5px solid var(--text-color);
     padding: 25px;
 }
 
 .main-part h2 {
-    font-size: 28px;
-    display: flex;
+    font-size: 60px;
+    text-align: right;
+    padding-right: 15px;
     width: 20%;
     text-align: right;
     line-height: 1.5;
 }
 
-.main-part p {
-    display: inline;
+#about p {
+   flex-wrap: wrap;
+   padding: 10px;
+   justify-content: column;
+   font-weight: bold;
 }
 
-#about {
-   flex-wrap: wrap;
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.code-ref {
+    background-image: url(./coding.jpg);
+}
+
+.code-ref span {
+    margin-left: -135px;
+}
+
+.animal {
+    background-image: url(./animal.png);
+}
+
+.animal span {
+    margin-left: -158px;
+}
+
+.dealership {
+    background-image: url(./obzu.jpeg);
+}
+
+.dealership span {
+    margin-left: -135px;
+}
+
+.website {
+    background-image: url(./website.png);
+}
+
+.website span {
+    margin-left: -120px;
+}
+
+.misc {
+    background-image: url(./misc.jpg);
+}
+
+.misc span {
+    margin-left: -108px;
+}
+
+.flex-item {
+    border: (5px solid black);
+    background-color: transparent;
+    color: var(--text-color);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.flex-item:first-child {
+    min-height: 300px;
+    flex-basis: 100%;
+    width: 100%;
+}
+
+.flex-item:hover {
+    background-size: auto 100%;
 }
 
 #projects {
@@ -102,12 +207,14 @@ main {
 }
 
 #contact div {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
 #contact div a {
+    color: var(--text-color);
     display: inline-block;
     background-image: linear-gradient(270deg, black 0%, black 100%);
     font-size: 24px;
@@ -116,9 +223,43 @@ main {
     background-position: bottom;
     background-size: auto 5px;
     transition: all 0.25s ease-in;
-    text-decoration: none;
 }
 
 #contact div a:hover {
     background-size: auto 100%;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 992px) {
+    header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    nav {
+        justify-content: center;
+    }
+    .big-banner {
+        justify-content: center;
+        text-align: center;
+    }
+    .main-part h2 {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        flex: 0 0 100%;
+    }
+    .main-part p {
+        text-align: bottom;
+    }
+    .main-part div {
+        border-left: none;
+        border-top: 5px solid var(--text-color);
+    }
 }
