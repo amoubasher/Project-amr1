@@ -1,3 +1,4 @@
+/* Set the font and the background color for the page */
 * {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucia Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: var(--body-color);
@@ -18,11 +19,13 @@ header {
     justify-content: space-between;
 }
 
+/* Make links have no decoration and dont change color once you click them */
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
+/* work on header here, move Image next to the name */
 header h1 {
     font-size: 34px;
     font-weight: bold;
@@ -35,6 +38,7 @@ header img {
     margin-left: -500px;
 }
 
+/* Make the nav items line up with the h1 and to the right */
 nav ul {
     list-style: none;
     margin: 0px;
@@ -60,6 +64,7 @@ nav li {
     margin: 0px 10px;
 }
 
+/* Make the links have a :hover in order to add style to the page and visual effects */
 nav ul li a {
     color: black;
     display: flex;
@@ -78,6 +83,7 @@ nav ul li a:hover {
     color: var(--tertiary);
 }
 
+/* add image to banner and make it fit */
 .big-banner {
     height: 300px;
     margin: 0px;
@@ -111,6 +117,7 @@ main {
     justify-content: space-between;
 }
 
+/* add the border between the contents of the page and their headers */
 .main-part div {
     width: 75%;
     border-left: 5px solid var(--text-color);
@@ -126,6 +133,7 @@ main {
     line-height: 1.5;
 }
 
+/* make the paragraphs stack on top of each other instead of sidebyside */
 #about p {
    flex-wrap: wrap;
    padding: 10px;
@@ -139,6 +147,8 @@ main {
     justify-content: center;
 }
 
+/* add images to the respective links */
+/* each span element needs to be modified in order to make the text line up with the project */
 .code-ref {
     background-image: url(./coding.jpg);
 }
@@ -179,6 +189,7 @@ main {
     margin-left: -108px;
 }
 
+/* make the projects line up like in the reference website */
 .flex-item {
     border: (5px solid black);
     background-color: transparent;
@@ -199,12 +210,14 @@ main {
     justify-content: flex-start;
 }
 
+/* We need to make the first child of the projects to be bigger than the others */
 .flex-item:first-child {
     min-height: 300px;
     flex-basis: 100%;
     width: 100%;
 }
 
+/* add style to the projects to change the baground to fit the width */
 .flex-item:hover {
     background-size: auto 100%;
 }
@@ -220,6 +233,7 @@ main {
     align-items: center;
 }
 
+/* Added a background to the links to make the page interactive when the user hovers over a link */
 #contact div a {
     color: var(--text-color);
     display: inline-block;
@@ -237,6 +251,7 @@ main {
     color: var(--text-color);
 }
 
+/* Add media to the page so when a user is looking at it in a phone it fits their screen */
 @media screen and (max-width: 992px) {
     header h1 {
         width: 100%;
