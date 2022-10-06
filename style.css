@@ -28,6 +28,13 @@ header h1 {
     font-weight: bold;
 }
 
+header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-left: -500px;
+}
+
 nav ul {
     list-style: none;
     margin: 0px;
@@ -235,15 +242,17 @@ main {
         width: 100%;
         padding: 5px;
         margin-bottom: 10px;
+        flex: 0 0 100%;
     }
     header {
         padding: 0 0 10px 0;
         justify-content: center;
-        text-align: center;
+        text-align: bottom;
         width: 100%;
     }
-    nav {
+    nav ul {
         justify-content: center;
+        text-align: bottom;
     }
     .big-banner {
         justify-content: center;
@@ -261,5 +270,12 @@ main {
     .main-part div {
         border-left: none;
         border-top: 5px solid var(--text-color);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #contact div {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
