@@ -89,7 +89,7 @@ nav ul li a:hover {
     margin: 0px;
     padding: 0px;
     font-size: 32px;
-    background-image: url(./water.jpg);
+    background-image: url(./images/water.jpg);
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -150,7 +150,7 @@ main {
 /* add images to the respective links */
 /* each span element needs to be modified in order to make the text line up with the project */
 .code-ref {
-    background-image: url(./coding.jpg);
+    background-image: url(./images/coding.jpg);
 }
 
 .code-ref span {
@@ -158,7 +158,7 @@ main {
 }
 
 .animal {
-    background-image: url(./animal.png);
+    background-image: url(./images/animal.png);
 }
 
 .animal span {
@@ -166,7 +166,7 @@ main {
 }
 
 .dealership {
-    background-image: url(./obzu.jpeg);
+    background-image: url(./images/obzu.jpeg);
 }
 
 .dealership span {
@@ -174,7 +174,7 @@ main {
 }
 
 .website {
-    background-image: url(./website.png);
+    background-image: url(./images/website.png);
 }
 
 .website span {
@@ -182,7 +182,7 @@ main {
 }
 
 .misc {
-    background-image: url(./misc.jpg);
+    background-image: url(./images/misc.jpg);
 }
 
 .misc span {
