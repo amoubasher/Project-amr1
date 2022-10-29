@@ -6,3 +6,4 @@ The project section had to adhere to certain standards also. The first child had
 Coloring was an issue while I was coding, so I had to keep it simple with a light-gray background, and darker text. For the nav items & the contact me items, the color & background would change when the user hovered over it with their mouse.
 Comments were added to the HTML and the CSS in where I had to add images or code. In the CSS the comments explained what the code under it was meant to do.
 This project was challenging and I feel like I could have improved the page overall, but the only way I could've known this was to start. If I had to start over, the page would turn out better based on what I have learned this first time going through this challenge. 
+![image](https://user-images.githubusercontent.com/68880379/194438739-856766b4-4993-4356-9117-bf332e4fe8d3.png)
