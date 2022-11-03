@@ -137,7 +137,7 @@ main {
 #about p {
    flex-wrap: wrap;
    padding: 10px;
-   justify-content: column;
+   /* justify-content: column; */
    font-weight: bold;
 }
 
@@ -191,7 +191,7 @@ main {
 
 /* make the projects line up like in the reference website */
 .flex-item {
-    border: (5px solid black);
+    border: 5px solid black;
     background-color: transparent;
     color: var(--text-color);
     min-height: 150px;
@@ -262,12 +262,10 @@ main {
     header {
         padding: 0 0 10px 0;
         justify-content: center;
-        text-align: bottom;
         width: 100%;
     }
     nav ul {
         justify-content: center;
-        text-align: bottom;
     }
     .big-banner {
         justify-content: center;
@@ -279,9 +277,7 @@ main {
         text-align: left;
         flex: 0 0 100%;
     }
-    .main-part p {
-        text-align: bottom;
-    }
+    
     .main-part div {
         border-left: none;
         border-top: 5px solid var(--text-color);
